@@ -39,8 +39,8 @@ Next up is to build out the Logic App, which will call the Function App we just 
 Request Body:
 
     {
-        "fileContent": "@body('Get_blob_content_(V2)')",
-        "fileName": "@triggerBody()?['DisplayName']"
+        "fileContent": @body('Get_blob_content_(V2)'),
+        "fileName": @triggerBody()?['DisplayName']
     }
 
 ![Add Azure Function Connector](images/024-logic-app-azure-function.png)
